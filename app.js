@@ -9,7 +9,7 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    exibirTextoNaTela('h1', 'Jogo do número Secreto');
+    exibirTextoNaTela('h1', 'Jogo do número mágico');
     exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
 }
 exibirMensagemInicial();
@@ -22,7 +22,7 @@ function verificarChute() {
     if (chute == numeroSecreto) {
         exibirTextoNaTela('h1', 'Acertou!');
         let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
-        let mensagemTentativas = `Você descobriu o número Secreto com ${tentativas} ${palavraTentativa}`;
+        let mensagemTentativas = `Você descobriu o número mágico com ${tentativas} ${palavraTentativa}`;
         exibirTextoNaTela('p', mensagemTentativas);
         document.getElementById('reiniciar').removeAttribute ('disabled');
     }  else {
